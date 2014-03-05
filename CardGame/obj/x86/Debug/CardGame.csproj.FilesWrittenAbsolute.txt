@@ -1,0 +1,5 @@
+/Users/johnniecris/Projects/CardGame/CardGame/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/johnniecris/Projects/CardGame/CardGame/bin/Debug/CardGame.exe.mdb
+/Users/johnniecris/Projects/CardGame/CardGame/bin/Debug/CardGame.exe
+/Users/johnniecris/Projects/CardGame/CardGame/obj/x86/Debug/CardGame.exe
+/Users/johnniecris/Projects/CardGame/CardGame/obj/x86/Debug/CardGame.exe.mdb
