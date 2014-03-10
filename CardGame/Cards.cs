@@ -2,7 +2,7 @@
 
 namespace CardGame
 {
-	class Cards
+	public class Cards
 	{
 		//variables
 		private string name;
@@ -11,14 +11,9 @@ namespace CardGame
 		private string suit;
 		Boolean faceUp;
 
-		public Cards(string name, string number, string color,
-			string suit, Boolean faceUp)
+		public Cards(string name)
 		{
 			this.name = name;
-			this.number = number;
-			this.color = color;
-			this.suit = suit;
-			this.faceUp = faceUp;
 
 			if (name == "1.gif") {
 				//A of clubs - black
@@ -386,33 +381,91 @@ namespace CardGame
 			}
 		}
 
+		/* <summary>
+		 * Returns the card's name
+		 * </summary>
+		 */
 		public string getCardName()
 		{
 			return name;
 		}
 
-		public string getPathCard(){
-			return "/Application/cards/" + name;
+		/* <summary>
+		 * Returns the card's number
+		 * </summary>
+		 */
+		public string getCardNumber()
+		{
+			return number;
 		}
 
-		public string getDescription(){
-			return name + "\n" + number + "\n" + color
-				+ "\n" + suit + "\n" + faceUp;
+		/* <summary>
+		 * Returns the card's color
+		 * </summary>
+		 */
+		public string getCardColor()
+		{
+			return color;
 		}
 
-		public string getface(){
-			return faceUp;
+		/* <summary>
+		 * Returns the card's suite
+		 * </summary>
+		 */
+		public string getCardSuit()
+		{
+			return suit;
 		}
 
-		public void changeFace(Boolean newFace){
+		/* <summary>
+		 * Returns the card's face
+		 * </summary>
+		 */
+		public bool isfaceUp()
+		{
+			Console.WriteLine(faceUp);
+		}
+
+		/* <summary>
+		 * Sets a new face of the card
+		 * </summary>
+		 */
+		public void changeFace(Boolean newFace)
+		{
 			if (newFace != faceUp) {
 				newFace = faceUp;
 			}
 		}
 
+		/* <summary>
+		 * Returns the full description of the card
+		 * </summary>
+		 */
+		public string getDescription()
+		{
+			return name + " " + number + " " + color
+				+ " " + suit + " " + faceUp;
+		}
+
+		/*
+		 * 
+		public string getPathCard()
+		{
+			return "/Application/cards/" + name;
+		}
+		 */	
+
+		/*
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("testing!");
-		}
+			for (int i = 0; i < 10; i++) {
+				if (i < 5) {
+					continue;
+				}
+				Console.WriteLine ("continue");
+				Console.WriteLine (i);
+			}
+		} 
+		*/
 	}
 }
